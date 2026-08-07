@@ -40,35 +40,38 @@ const reasons = [
 export default function HomePage() {
   return (
     <>
-      <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-8 pt-8 sm:px-6 sm:pt-14 lg:grid-cols-2 lg:px-8 lg:pb-16">
-        <Reveal>
-          <p className="font-display text-4xl font-semibold tracking-tight text-brand sm:text-5xl">
-            ExactBox
-          </p>
-          <h1 className="mt-4 font-display text-4xl font-semibold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-[3.4rem]">
-            Передайте логістику професіоналам — зосередьтесь на розвитку бізнесу
-          </h1>
-          <p className="mt-5 max-w-xl text-lg text-muted">
-            Ми приймаємо, зберігаємо, комплектуємо та відправляємо ваші товари по всій країні.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="/#lead-form"
-              className="inline-flex rounded-2xl bg-brand px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand/25 transition hover:-translate-y-0.5"
-            >
-              Отримати консультацію
-            </Link>
-            <Link
-              href="/taryfy"
-              className="inline-flex rounded-2xl border border-border bg-white/80 px-5 py-3.5 text-sm font-semibold text-foreground transition hover:-translate-y-0.5 hover:border-brand/30"
-            >
-              Розрахувати вартість
-            </Link>
-          </div>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <WarehouseIllustration className="h-auto w-full drop-shadow-xl" />
-        </Reveal>
+      <section className="relative overflow-hidden pb-6 pt-6 sm:pb-10 sm:pt-10 lg:pb-14 lg:pt-8">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-[70%] bg-[radial-gradient(ellipse_at_80%_20%,rgba(37,99,235,0.08),transparent_55%)]" />
+        <div className="relative mx-auto grid max-w-7xl items-center gap-8 px-4 sm:px-6 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.2fr)] lg:gap-6 lg:px-8">
+          <Reveal>
+            <p className="font-display text-4xl font-semibold tracking-tight text-brand sm:text-5xl">
+              ExactBox
+            </p>
+            <h1 className="mt-4 font-display text-4xl font-semibold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-[3.25rem]">
+              Передайте логістику професіоналам — зосередьтесь на розвитку бізнесу
+            </h1>
+            <p className="mt-5 max-w-xl text-lg text-muted">
+              Ми приймаємо, зберігаємо, комплектуємо та відправляємо ваші товари по всій країні.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                href="/#lead-form"
+                className="inline-flex rounded-2xl bg-brand px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand/25 transition hover:-translate-y-0.5"
+              >
+                Отримати консультацію
+              </Link>
+              <Link
+                href="/taryfy"
+                className="inline-flex rounded-2xl border border-border bg-white px-5 py-3.5 text-sm font-semibold text-foreground transition hover:-translate-y-0.5 hover:border-brand/30"
+              >
+                Розрахувати вартість
+              </Link>
+            </div>
+          </Reveal>
+          <Reveal delay={0.08} className="min-w-0 lg:-mr-4 xl:-mr-8">
+            <WarehouseIllustration className="h-auto w-full min-h-[280px] scale-[1.02] sm:min-h-[360px] lg:min-h-[480px] lg:scale-105" />
+          </Reveal>
+        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
