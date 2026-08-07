@@ -37,7 +37,7 @@ export default function ContactsPage() {
               <p className="text-lg font-semibold text-foreground">{site.address}</p>
             </ContactCard>
             <div className="overflow-hidden rounded-[1.75rem] border border-border bg-slate-100">
-              <div className="flex h-52 items-center justify-center bg-[radial-gradient(circle_at_30%_20%,rgba(37,99,235,0.18),transparent_45%),radial-gradient(circle_at_70%_70%,rgba(16,185,129,0.16),transparent_40%),#e2e8f0] p-6 text-center">
+              <div className="flex h-52 items-center justify-center bg-slate-50 p-6 text-center">
                 <div>
                   <p className="font-display text-lg font-semibold text-foreground">Карта складу</p>
                   <p className="mt-2 max-w-xs text-sm text-muted">

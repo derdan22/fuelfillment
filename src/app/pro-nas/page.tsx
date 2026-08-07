@@ -26,7 +26,7 @@ export default function AboutPage() {
             </article>
           </Reveal>
           <Reveal delay={0.08}>
-            <article className="rounded-[2rem] border border-border bg-gradient-to-br from-blue-soft to-white p-8">
+            <article className="rounded-[2rem] border border-border bg-white p-8">
               <h2 className="font-display text-2xl font-semibold">На чому тримаємось</h2>
               <ul className="mt-4 space-y-3 text-sm text-muted">
                 <li>• Точність комплектації та відповідальне зберігання</li>

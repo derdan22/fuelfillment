@@ -30,7 +30,7 @@ export default function ForMarketplacesPage() {
           </div>
         </Reveal>
 
-        <Reveal className="mt-12 rounded-[2rem] border border-border bg-gradient-to-br from-blue-soft to-green-soft p-8 sm:p-10">
+        <Reveal className="mt-12 rounded-[2rem] border border-border bg-white p-8 sm:p-10">
           <h2 className="font-display text-2xl font-semibold sm:text-3xl">FBO та FBS</h2>
           <p className="mt-3 max-w-2xl text-muted">
             Допомагаємо обрати модель роботи з маркетплейсом, налаштувати процеси та уникнути типових

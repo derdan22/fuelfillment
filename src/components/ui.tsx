@@ -38,20 +38,12 @@ export function CtaSection({
   return (
     <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
       <Reveal>
-        <div className="relative overflow-hidden rounded-[2rem] border border-border bg-gradient-to-br from-white via-blue-soft/50 to-green-soft/40 px-8 py-12 text-center sm:px-12 sm:py-14">
-          <div
-            className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-brand/10 blur-3xl"
-            aria-hidden
-          />
-          <div
-            className="pointer-events-none absolute -bottom-20 -left-10 h-40 w-40 rounded-full bg-accent/10 blur-3xl"
-            aria-hidden
-          />
-          <h2 className="relative font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+        <div className="rounded-[2rem] border border-border bg-white px-8 py-12 text-center sm:px-12 sm:py-14">
+          <h2 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
             {title}
           </h2>
-          <p className="relative mx-auto mt-4 max-w-xl text-muted">{subtitle}</p>
-          <div className="relative mt-8 flex flex-wrap items-center justify-center gap-3">
+          <p className="mx-auto mt-4 max-w-xl text-muted">{subtitle}</p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link
               href="/kontakty#lead-form"
               className="inline-flex rounded-2xl bg-brand px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand/25 transition hover:-translate-y-0.5 hover:bg-blue-600"
