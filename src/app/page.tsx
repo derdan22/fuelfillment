@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { AnimatedCounter } from "@/components/AnimatedCounter";
-import { ReviewsSlider } from "@/components/ReviewsSlider";
 import { Reveal } from "@/components/Reveal";
 import { WarehouseIllustration } from "@/components/WarehouseIllustration";
 import { CtaSection, FeatureGrid } from "@/components/ui";
@@ -84,27 +82,6 @@ export default function HomePage() {
         <div className="mt-10">
           <FeatureGrid items={reasons} />
         </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="grid gap-10 rounded-[2rem] border border-brand/10 bg-blue-soft px-6 py-12 sm:grid-cols-2 sm:px-10 lg:grid-cols-4">
-          <AnimatedCounter value={99.9} suffix="%" label="точність комплектації" />
-          <AnimatedCounter value={100000} suffix="+" label="відправлень" />
-          <div className="text-center">
-            <p className="font-display text-4xl font-semibold tracking-tight sm:text-5xl">24/7</p>
-            <p className="mt-2 text-sm text-muted">підтримка процесів</p>
-          </div>
-          <AnimatedCounter value={500} suffix="+" label="клієнтів" />
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <Reveal>
-          <h2 className="mb-8 font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-            Відгуки клієнтів
-          </h2>
-        </Reveal>
-        <ReviewsSlider />
       </section>
 
       <CtaSection />
