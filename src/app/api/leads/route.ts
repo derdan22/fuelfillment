@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { getPrisma } from "@/lib/prisma";
 import { sendLeadEmail } from "@/lib/email";
 import { checkRateLimit } from "@/lib/rate-limit";
 
@@ -37,20 +37,41 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Некоректний email." }, { status: 400 });
     }
 
-    const lead = await prisma.lead.create({
-      data: {
-        name: String(name).trim(),
-        phone: String(phone).trim(),
-        email: String(email).trim(),
-        company: company ? String(company).trim() : null,
-        comment: comment ? String(comment).trim() : null,
-      },
-    });
+    const lead = {
+      name: String(name).trim(),
+      phone: String(phone).trim(),
+      email: String(email).trim(),
+      company: company ? String(company).trim() : null,
+      comment: comment ? String(comment).trim() : null,
+    };
 
+    let savedToDb = false;
+    const prisma = await getPrisma();
+    if (prisma) {
+      try {
+        await prisma.lead.create({ data: lead });
+        savedToDb = true;
+      } catch (err) {
+        console.error("DB save failed:", err);
+      }
+    }
+
+    let emailed = false;
     try {
-      await sendLeadEmail(lead);
+      const result = await sendLeadEmail(lead);
+      emailed = !result.skipped;
     } catch (err) {
-      console.error("Email send failed after DB save:", err);
+      console.error("Email send failed:", err);
+    }
+
+    if (!savedToDb && !emailed) {
+      return NextResponse.json(
+        {
+          error:
+            "Не вдалося зберегти заявку. Додайте RESEND_API_KEY у середовищі Vercel або перевірте БД локально.",
+        },
+        { status: 503 },
+      );
     }
 
     return NextResponse.json({ ok: true });

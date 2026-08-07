@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.join(__dirname),
   },
+  serverExternalPackages: ["better-sqlite3", "@prisma/adapter-better-sqlite3"],
   async redirects() {
     return [
       { source: "/how-it-works", destination: "/yak-pracyuye", permanent: true },
