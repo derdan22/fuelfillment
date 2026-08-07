@@ -64,24 +64,6 @@ const services = [
       </svg>
     ),
   },
-  {
-    title: "Cross Docking",
-    text: "Швидка перевалка без довгого зберігання на складі.",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <path d="M7 17l-4-4 4-4M17 7l4 4-4 4M14 5l-4 14" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-  },
-  {
-    title: "FBO / FBS",
-    text: "Підтримка моделей роботи з маркетплейсами FBO та FBS.",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <path d="M3 7h18v4H3zM5 11v8h14v-8M9 15h6" strokeLinejoin="round" strokeLinecap="round" />
-      </svg>
-    ),
-  },
 ];
 
 export default function ServicesPage() {
