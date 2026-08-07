@@ -49,7 +49,7 @@ export function LeadForm() {
     return (
       <div
         id="lead-form"
-        className="rounded-[2rem] border border-border bg-white p-8 text-center shadow-sm sm:p-10"
+        className="rounded-[2rem] border border-brand/10 bg-blue-soft p-8 text-center shadow-sm sm:p-10"
       >
         <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-green-soft text-accent">
           <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2.2">
@@ -76,7 +76,7 @@ export function LeadForm() {
     <form
       id="lead-form"
       onSubmit={onSubmit}
-      className="relative rounded-[2rem] border border-border bg-white p-8 shadow-sm sm:p-10"
+      className="relative rounded-[2rem] border border-brand/10 bg-blue-soft p-8 shadow-sm sm:p-10"
     >
       <div className="mb-6">
         <h3 className="font-display text-2xl font-semibold text-foreground">

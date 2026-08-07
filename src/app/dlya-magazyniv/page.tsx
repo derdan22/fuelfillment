@@ -35,7 +35,7 @@ export default function ForStoresPage() {
         <div className="grid gap-4 lg:grid-cols-3">
           {benefits.map((b, i) => (
             <Reveal key={b.title} delay={i * 0.05}>
-              <article className="h-full rounded-[1.75rem] border border-border bg-white/80 p-6">
+              <article className="h-full rounded-[1.75rem] border border-brand/10 bg-blue-soft p-6">
                 <h2 className="font-display text-xl font-semibold">{b.title}</h2>
                 <p className="mt-3 text-sm leading-relaxed text-muted">{b.text}</p>
               </article>
@@ -50,7 +50,7 @@ export default function ForStoresPage() {
             {integrations.map((name) => (
               <span
                 key={name}
-                className="rounded-2xl border border-border bg-white/90 px-5 py-3 text-sm font-semibold text-foreground"
+                className="rounded-2xl border border-brand/10 bg-blue-soft px-5 py-3 text-sm font-semibold text-foreground"
               >
                 {name}
               </span>

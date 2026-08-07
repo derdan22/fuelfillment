@@ -37,7 +37,7 @@ export function FaqAccordion() {
       {items.map((item, i) => {
         const isOpen = open === i;
         return (
-          <div key={item.q} className="overflow-hidden rounded-3xl border border-border bg-white/80">
+          <div key={item.q} className="overflow-hidden rounded-3xl border border-brand/10 bg-blue-soft">
             <button
               type="button"
               className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left sm:px-6"

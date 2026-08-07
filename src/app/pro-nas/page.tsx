@@ -17,7 +17,7 @@ export default function AboutPage() {
       <section className="mx-auto max-w-6xl px-4 pb-10 sm:px-6 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-2">
           <Reveal>
-            <article className="rounded-[2rem] border border-border bg-white/80 p-8">
+            <article className="rounded-[2rem] border border-brand/10 bg-blue-soft p-8">
               <h2 className="font-display text-2xl font-semibold">Наш підхід</h2>
               <p className="mt-4 text-muted leading-relaxed">
                 Сайт Derrdan створений не для «купити в один клік», а для якісних заявок. Після форми з
@@ -26,7 +26,7 @@ export default function AboutPage() {
             </article>
           </Reveal>
           <Reveal delay={0.08}>
-            <article className="rounded-[2rem] border border-border bg-white p-8">
+            <article className="rounded-[2rem] border border-brand/10 bg-blue-soft p-8">
               <h2 className="font-display text-2xl font-semibold">На чому тримаємось</h2>
               <ul className="mt-4 space-y-3 text-sm text-muted">
                 <li>• Точність комплектації та відповідальне зберігання</li>

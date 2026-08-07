@@ -42,7 +42,7 @@ export default function PricingPage() {
                 className={`flex h-full flex-col rounded-[2rem] border p-7 ${
                   plan.featured
                     ? "border-brand bg-brand text-white shadow-xl shadow-brand/20"
-                    : "border-border bg-white/80"
+                    : "border-brand/10 bg-blue-soft"
                 }`}
               >
                 <h2 className="font-display text-2xl font-semibold">{plan.name}</h2>

@@ -22,7 +22,7 @@ export default function ForMarketplacesPage() {
             {markets.map((name) => (
               <div
                 key={name}
-                className="rounded-[1.75rem] border border-border bg-white/80 px-6 py-8 text-center font-display text-xl font-semibold transition hover:-translate-y-1 hover:shadow-lg hover:shadow-slate-900/5"
+                className="rounded-[1.75rem] border border-brand/10 bg-blue-soft px-6 py-8 text-center font-display text-xl font-semibold transition hover:-translate-y-1 hover:shadow-lg hover:shadow-brand/10"
               >
                 {name}
               </div>
@@ -30,7 +30,7 @@ export default function ForMarketplacesPage() {
           </div>
         </Reveal>
 
-        <Reveal className="mt-12 rounded-[2rem] border border-border bg-white p-8 sm:p-10">
+        <Reveal className="mt-12 rounded-[2rem] border border-brand/10 bg-blue-soft p-8 sm:p-10">
           <h2 className="font-display text-2xl font-semibold sm:text-3xl">FBO та FBS</h2>
           <p className="mt-3 max-w-2xl text-muted">
             Допомагаємо обрати модель роботи з маркетплейсом, налаштувати процеси та уникнути типових

@@ -53,7 +53,7 @@ export default function HowItWorksPage() {
                 <span className="absolute -left-[2.55rem] flex h-8 w-8 items-center justify-center rounded-full bg-brand text-xs font-bold text-white">
                   {i + 1}
                 </span>
-                <div className="rounded-3xl border border-border bg-white/80 p-5 sm:p-6">
+                <div className="rounded-3xl border border-brand/10 bg-blue-soft p-5 sm:p-6">
                   <h2 className="font-display text-xl font-semibold text-foreground">{step.title}</h2>
                   <p className="mt-2 text-sm leading-relaxed text-muted">{step.text}</p>
                 </div>

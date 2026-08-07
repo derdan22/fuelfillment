@@ -32,7 +32,7 @@ export function ReviewsSlider() {
   const review = reviews[index];
 
   return (
-    <div className="relative overflow-hidden rounded-[2rem] border border-border bg-white/80 p-8 sm:p-12">
+    <div className="relative overflow-hidden rounded-[2rem] border border-brand/10 bg-blue-soft p-8 sm:p-12">
       <AnimatePresence mode="wait">
         <motion.blockquote
           key={review.name}

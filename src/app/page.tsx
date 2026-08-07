@@ -87,7 +87,7 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="grid gap-10 rounded-[2rem] border border-border bg-white/70 px-6 py-12 sm:grid-cols-2 sm:px-10 lg:grid-cols-4">
+        <div className="grid gap-10 rounded-[2rem] border border-brand/10 bg-blue-soft px-6 py-12 sm:grid-cols-2 sm:px-10 lg:grid-cols-4">
           <AnimatedCounter value={99.9} suffix="%" label="точність комплектації" />
           <AnimatedCounter value={100000} suffix="+" label="відправлень" />
           <div className="text-center">

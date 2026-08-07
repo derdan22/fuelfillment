@@ -59,7 +59,7 @@ export default function ContactsPage() {
 
 function ContactCard({ label, children }: { label: string; children: ReactNode }) {
   return (
-    <div className="rounded-[1.75rem] border border-border bg-white px-5 py-4">
+    <div className="rounded-[1.75rem] border border-brand/10 bg-blue-soft px-5 py-4">
       <p className="text-xs font-medium uppercase tracking-wide text-muted">{label}</p>
       <div className="mt-1">{children}</div>
     </div>
