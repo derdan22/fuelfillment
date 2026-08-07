@@ -1,4 +1,4 @@
-# Derrdan — сайт фулфілмент-оператора
+# ExactBox — сайт фулфілмент-оператора
 
 Багатосторінковий сайт на **Next.js** (українською). Єдина ціль — якісна заявка; після відправки дані зберігаються в SQLite (локально) і/або надсилаються на email через Resend.
 
@@ -25,7 +25,7 @@ npm run dev
 ```
 RESEND_API_KEY=re_xxx
 ADMIN_EMAIL=380961679298chabanyuk@gmail.com
-RESEND_FROM=Derrdan <onboarding@resend.dev>
+RESEND_FROM=ExactBox <onboarding@resend.dev>
 ```
 
 Без `RESEND_API_KEY` заявка все одно збережеться в БД, але лист не піде (у консолі буде попередження).

@@ -1,5 +1,5 @@
 export const site = {
-  name: "Derrdan",
+  name: "ExactBox",
   tagline: "Фулфілмент для зростання вашого бізнесу",
   email: "380961679298chabanyuk@gmail.com",
   phone: "+380 96 167 92 98",

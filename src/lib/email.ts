@@ -30,7 +30,7 @@ export async function sendLeadEmail(lead: LeadPayload) {
   `;
 
   const { error } = await resend.emails.send({
-    from: process.env.RESEND_FROM || "Derrdan <onboarding@resend.dev>",
+    from: process.env.RESEND_FROM || "ExactBox <onboarding@resend.dev>",
     to: adminEmail,
     subject: `Нова заявка: ${lead.name}`,
     replyTo: lead.email,

@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        title="Про Derrdan"
+        title="Про ExactBox"
         subtitle="Ми допомагаємо брендам і продавцям віддати логістику на аутсорс і зростати без операційного хаосу."
       />
 
@@ -20,7 +20,7 @@ export default function AboutPage() {
             <article className="rounded-[2rem] border border-brand/10 bg-blue-soft p-8">
               <h2 className="font-display text-2xl font-semibold">Наш підхід</h2>
               <p className="mt-4 text-muted leading-relaxed">
-                Сайт Derrdan створений не для «купити в один клік», а для якісних заявок. Після форми з
+                Сайт ExactBox створений не для «купити в один клік», а для якісних заявок. Після форми з
                 вами працює людина — персональний менеджер, який розбирає задачу і пропонує рішення.
               </p>
             </article>

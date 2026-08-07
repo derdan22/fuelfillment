@@ -15,7 +15,7 @@ export function PageHero({
     <section className="mx-auto max-w-6xl px-4 pb-10 pt-10 sm:px-6 sm:pt-16 lg:px-8">
       <Reveal>
         <p className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-brand">
-          Derrdan
+          ExactBox
         </p>
         <h1 className="mt-3 max-w-3xl font-display text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
           {title}

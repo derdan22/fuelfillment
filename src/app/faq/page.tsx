@@ -12,7 +12,7 @@ export default function FaqPage() {
     <>
       <PageHero
         title="Часті запитання"
-        subtitle="Короткі відповіді про підключення, вартість і формат роботи з Derrdan."
+        subtitle="Короткі відповіді про підключення, вартість і формат роботи з ExactBox."
       />
       <section className="mx-auto max-w-3xl px-4 pb-8 sm:px-6 lg:px-8">
         <Reveal>

@@ -42,7 +42,7 @@ export default function HomePage() {
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-8 pt-8 sm:px-6 sm:pt-14 lg:grid-cols-2 lg:px-8 lg:pb-16">
         <Reveal>
           <p className="font-display text-4xl font-semibold tracking-tight text-brand sm:text-5xl">
-            Derrdan
+            ExactBox
           </p>
           <h1 className="mt-4 font-display text-4xl font-semibold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-[3.4rem]">
             Передайте логістику професіоналам — зосередьтесь на розвитку бізнесу
