@@ -4,7 +4,7 @@ import { FormEvent, useState } from "react";
 
 type Status = "idle" | "loading" | "success" | "error";
 
-export function LeadForm() {
+export function LeadForm({ embedded = false }: { embedded?: boolean }) {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState("");
 
@@ -47,10 +47,7 @@ export function LeadForm() {
 
   if (status === "success") {
     return (
-      <div
-        id="lead-form"
-        className="rounded-[2rem] border border-brand/10 bg-blue-soft p-8 text-center shadow-sm sm:p-10"
-      >
+      <div className="rounded-[2rem] border border-brand/10 bg-blue-soft p-8 text-center shadow-sm sm:p-10">
         <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-green-soft text-accent">
           <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2.2">
             <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
@@ -74,20 +71,21 @@ export function LeadForm() {
 
   return (
     <form
-      id="lead-form"
       onSubmit={onSubmit}
       className="relative rounded-[2rem] border border-brand/10 bg-blue-soft p-8 shadow-sm sm:p-10"
     >
-      <div className="mb-6">
-        <h3 className="font-display text-2xl font-semibold text-foreground">
-          Отримати консультацію
-        </h3>
-        <p className="mt-2 text-sm text-muted">
-          Залиште контакти — менеджер допоможе підібрати рішення під ваш бізнес.
-        </p>
-      </div>
+      {embedded ? null : (
+        <div className="mb-6">
+          <h3 className="font-display text-2xl font-semibold text-foreground">
+            Отримати консультацію
+          </h3>
+          <p className="mt-2 text-sm text-muted">
+            Залиште контакти — менеджер допоможе підібрати рішення під ваш бізнес.
+          </p>
+        </div>
+      )}
 
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className={`grid gap-4 sm:grid-cols-2 ${embedded ? "" : ""}`}>
         <Field label="Ім'я *" name="name" required placeholder="Олександр" />
         <Field label="Телефон *" name="phone" required placeholder="+380..." type="tel" />
         <Field label="Email *" name="email" required placeholder="you@company.com" type="email" />

@@ -58,7 +58,7 @@ export default function PricingPage() {
                   ))}
                 </ul>
                 <Link
-                  href="/kontakty#lead-form"
+                  href="/#lead-form"
                   className={`mt-8 inline-flex justify-center rounded-2xl px-4 py-3 text-sm font-semibold transition hover:-translate-y-0.5 ${
                     plan.featured
                       ? "bg-white text-brand"

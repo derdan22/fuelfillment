@@ -17,7 +17,10 @@ export default function ContactsPage() {
         subtitle="Напишіть нам або залиште заявку — відповімо в найближчий робочий час."
       />
 
-      <section className="mx-auto grid max-w-6xl gap-8 px-4 pb-20 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+      <section
+        id="lead-form"
+        className="scroll-mt-24 mx-auto grid max-w-6xl gap-8 px-4 pb-20 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8"
+      >
         <Reveal>
           <div className="space-y-3">
             <ContactCard label="Телефон">

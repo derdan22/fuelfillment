@@ -1,7 +1,8 @@
 import Link from "next/link";
+import { LeadForm } from "@/components/LeadForm";
 import { Reveal } from "@/components/Reveal";
 import { WarehouseIllustration } from "@/components/WarehouseIllustration";
-import { CtaSection, FeatureGrid } from "@/components/ui";
+import { FeatureGrid } from "@/components/ui";
 
 const reasons = [
   {
@@ -52,7 +53,7 @@ export default function HomePage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              href="/kontakty#lead-form"
+              href="/#lead-form"
               className="inline-flex rounded-2xl bg-brand px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand/25 transition hover:-translate-y-0.5"
             >
               Отримати консультацію
@@ -84,7 +85,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      <CtaSection />
+      <section
+        id="lead-form"
+        className="scroll-mt-24 flex min-h-[calc(100svh-5.5rem)] items-center border-t border-border bg-white"
+      >
+        <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-16">
+          <div>
+            <p className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-brand">
+              Консультація
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+              Отримати консультацію
+            </h2>
+            <p className="mt-4 max-w-md text-lg text-muted">
+              Залиште контакти — персональний менеджер допоможе підібрати рішення під ваш бізнес.
+            </p>
+          </div>
+          <LeadForm embedded />
+        </div>
+      </section>
     </>
   );
 }

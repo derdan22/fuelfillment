@@ -52,7 +52,7 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <Link
-            href="/kontakty#lead-form"
+            href="/#lead-form"
             className="hidden rounded-2xl bg-brand px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-brand/25 transition hover:-translate-y-0.5 hover:bg-blue-600 sm:inline-flex"
           >
             Отримати консультацію
@@ -88,7 +88,7 @@ export function Header() {
               </Link>
             ))}
             <Link
-              href="/kontakty#lead-form"
+              href="/#lead-form"
               className="mt-2 rounded-2xl bg-brand px-4 py-3 text-center text-sm font-semibold text-white"
             >
               Отримати консультацію

@@ -45,7 +45,7 @@ export function CtaSection({
           <p className="mx-auto mt-4 max-w-xl text-muted">{subtitle}</p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link
-              href="/kontakty#lead-form"
+              href="/#lead-form"
               className="inline-flex rounded-2xl bg-brand px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand/25 transition hover:-translate-y-0.5 hover:bg-blue-600"
             >
               Залишити заявку
