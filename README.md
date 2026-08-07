@@ -30,11 +30,11 @@ RESEND_FROM=Derrdan <onboarding@resend.dev>
 ## Сторінки
 
 - `/` — Головна
-- `/how-it-works` — Як працює
-- `/services` — Послуги
-- `/for-stores` — Для інтернет-магазинів
-- `/for-marketplaces` — Для маркетплейсів
-- `/pricing` — Тарифи
+- `/yak-pracyuye` — Як працює
+- `/poslugy` — Послуги
+- `/dlya-magazyniv` — Для інтернет-магазинів
+- `/dlya-marketplejsiv` — Для маркетплейсів
+- `/taryfy` — Тарифи
 - `/faq` — FAQ
-- `/about` — Про компанію
-- `/contacts` — Контакти
+- `/pro-nas` — Про компанію
+- `/kontakty` — Контакти (форма заявки)

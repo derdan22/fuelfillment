@@ -10,21 +10,17 @@ export const site = {
 
 export const navLinks = [
   { href: "/", label: "Головна" },
-  { href: "/how-it-works", label: "Як працює" },
-  { href: "/services", label: "Послуги" },
-  { href: "/pricing", label: "Тарифи" },
+  { href: "/yak-pracyuye", label: "Як працює" },
+  { href: "/poslugy", label: "Послуги" },
+  { href: "/taryfy", label: "Тарифи" },
   { href: "/faq", label: "FAQ" },
-  { href: "/contacts", label: "Контакти" },
+  { href: "/kontakty", label: "Контакти" },
 ] as const;
 
+/** Короткий рядок у футері — без дублювання всього меню */
 export const footerLinks = [
-  { href: "/", label: "Головна" },
-  { href: "/how-it-works", label: "Як працює" },
-  { href: "/services", label: "Послуги" },
-  { href: "/for-stores", label: "Для інтернет-магазинів" },
-  { href: "/for-marketplaces", label: "Для маркетплейсів" },
-  { href: "/pricing", label: "Тарифи" },
-  { href: "/faq", label: "FAQ" },
-  { href: "/about", label: "Про компанію" },
-  { href: "/contacts", label: "Контакти" },
+  { href: "/poslugy", label: "Послуги" },
+  { href: "/taryfy", label: "Тарифи" },
+  { href: "/pro-nas", label: "Про нас" },
+  { href: "/kontakty", label: "Контакти" },
 ] as const;

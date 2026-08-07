@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { LeadForm } from "./LeadForm";
 import { Reveal } from "./Reveal";
 
 export function PageHero({
@@ -28,32 +27,46 @@ export function PageHero({
   );
 }
 
+/** Легкий CTA без форми — форма лише на /kontakty */
 export function CtaSection({
-  title = "Залиште заявку та отримайте безкоштовну консультацію",
-  subtitle = "Персональний менеджер зв'яжеться з вами, відповість на питання та допоможе розрахувати вартість.",
+  title = "Готові передати логістику на аутсорс?",
+  subtitle = "Залиште заявку на сторінці контактів — персональний менеджер допоможе підібрати рішення.",
 }: {
   title?: string;
   subtitle?: string;
 }) {
   return (
     <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-      <div className="grid items-start gap-10 rounded-[2.5rem] border border-border bg-gradient-to-br from-white via-blue-soft/40 to-green-soft/50 p-6 sm:p-10 lg:grid-cols-2 lg:p-12">
-        <Reveal>
-          <h2 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+      <Reveal>
+        <div className="relative overflow-hidden rounded-[2rem] border border-border bg-gradient-to-br from-white via-blue-soft/50 to-green-soft/40 px-8 py-12 text-center sm:px-12 sm:py-14">
+          <div
+            className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-brand/10 blur-3xl"
+            aria-hidden
+          />
+          <div
+            className="pointer-events-none absolute -bottom-20 -left-10 h-40 w-40 rounded-full bg-accent/10 blur-3xl"
+            aria-hidden
+          />
+          <h2 className="relative font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
             {title}
           </h2>
-          <p className="mt-4 text-muted">{subtitle}</p>
-          <Link
-            href="/how-it-works"
-            className="mt-6 inline-flex text-sm font-semibold text-brand hover:underline"
-          >
-            Дізнатися, як це працює →
-          </Link>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <LeadForm compact />
-        </Reveal>
-      </div>
+          <p className="relative mx-auto mt-4 max-w-xl text-muted">{subtitle}</p>
+          <div className="relative mt-8 flex flex-wrap items-center justify-center gap-3">
+            <Link
+              href="/kontakty#lead-form"
+              className="inline-flex rounded-2xl bg-brand px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand/25 transition hover:-translate-y-0.5 hover:bg-blue-600"
+            >
+              Залишити заявку
+            </Link>
+            <Link
+              href="/yak-pracyuye"
+              className="inline-flex rounded-2xl border border-border bg-white/80 px-6 py-3.5 text-sm font-semibold text-foreground transition hover:-translate-y-0.5 hover:border-brand/30"
+            >
+              Як це працює
+            </Link>
+          </div>
+        </div>
+      </Reveal>
     </section>
   );
 }

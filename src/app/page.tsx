@@ -54,13 +54,13 @@ export default function HomePage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              href="/contacts#lead-form"
+              href="/kontakty#lead-form"
               className="inline-flex rounded-2xl bg-brand px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand/25 transition hover:-translate-y-0.5"
             >
               Отримати консультацію
             </Link>
             <Link
-              href="/pricing"
+              href="/taryfy"
               className="inline-flex rounded-2xl border border-border bg-white/80 px-5 py-3.5 text-sm font-semibold text-foreground transition hover:-translate-y-0.5 hover:border-brand/30"
             >
               Розрахувати вартість

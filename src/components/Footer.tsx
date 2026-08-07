@@ -4,54 +4,39 @@ import { footerLinks, site } from "@/lib/site";
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-border bg-white/60">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.2fr_1fr_1fr] lg:px-8">
-        <div className="space-y-4">
+    <footer className="mt-auto border-t border-border bg-white/50">
+      <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-10 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <div className="max-w-sm space-y-3">
           <Logo />
-          <p className="max-w-sm text-sm leading-relaxed text-muted">
-            Приймаємо, зберігаємо, комплектуємо та відправляємо ваші товари — щоб ви
-            зосередились на розвитку бізнесу.
+          <p className="text-sm leading-relaxed text-muted">
+            Фулфілмент без зайвої складності — склад, комплектація й відправка під ваш бізнес.
           </p>
         </div>
 
-        <div>
-          <p className="mb-4 text-sm font-semibold text-foreground">Навігація</p>
-          <ul className="space-y-2">
-            {footerLinks.map((link) => (
-              <li key={link.href}>
-                <Link href={link.href} className="text-sm text-muted transition hover:text-brand">
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <nav className="flex flex-wrap gap-x-5 gap-y-2" aria-label="Швидкі посилання">
+          {footerLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-sm text-muted transition hover:text-brand"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
 
-        <div>
-          <p className="mb-4 text-sm font-semibold text-foreground">Контакти</p>
-          <ul className="space-y-2 text-sm text-muted">
-            <li>
-              <a href={site.phoneHref} className="hover:text-brand">
-                {site.phone}
-              </a>
-            </li>
-            <li>
-              <a href={`mailto:${site.email}`} className="hover:text-brand">
-                {site.email}
-              </a>
-            </li>
-            <li>{site.address}</li>
-          </ul>
-          <Link
-            href="/contacts#lead-form"
-            className="mt-6 inline-flex rounded-2xl bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition hover:-translate-y-0.5"
-          >
-            Залишити заявку
-          </Link>
+        <div className="flex flex-col gap-1 text-sm text-muted lg:items-end">
+          <a href={site.phoneHref} className="font-medium text-foreground hover:text-brand">
+            {site.phone}
+          </a>
+          <a href={`mailto:${site.email}`} className="hover:text-brand">
+            {site.email}
+          </a>
         </div>
       </div>
-      <div className="border-t border-border py-5 text-center text-xs text-muted">
-        © {new Date().getFullYear()} {site.name}. Усі права захищено.
+
+      <div className="border-t border-border py-4 text-center text-xs text-muted">
+        © {new Date().getFullYear()} {site.name}
       </div>
     </footer>
   );
